@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { motion } from "motion/react";
 import { HeroText } from "./_components/hero-text";
 
 export default function Home() {
