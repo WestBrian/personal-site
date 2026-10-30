@@ -1,20 +1,26 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  content: [
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    screens: {
+      wide: "1500px",
+      tablet: { max: "800px" },
+      phone: { max: "550px" },
+    },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--bg)",
+        ink: "var(--ink)",
+        muted: "var(--muted)",
+        soft: "var(--soft)",
+        line: "var(--line)",
+        accent: "var(--accent)",
+        wash: "var(--wash)",
+        button: "var(--button)",
+        headline: "var(--headline)",
       },
-      fontFamily: {
-        sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui"],
-        mono: ["var(--font-geist-mono)", "ui-monospace", "SFMono-Regular"],
-      },
+      fontFamily: { sans: ["var(--font-inter)", "Arial", "sans-serif"] },
     },
   },
   plugins: [],

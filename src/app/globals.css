@@ -3,17 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --bg: #fdfdfc;
+  --ink: #27272b;
+  --muted: #6e6e76;
+  --soft: #73737d;
+  --line: #eaeaec;
+  --accent: #6558bd;
+  --wash: #f4f3f8;
+  --button: #f0f0ef;
+  --headline: #898992;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #19191b;
+  --ink: #e9e9ec;
+  --muted: #a3a3ad;
+  --soft: #85858e;
+  --line: #313136;
+  --accent: #b8aaf3;
+  --wash: #222128;
+  --button: #29292e;
+  --headline: #9d9da8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-}
-
-body {
-  @apply bg-background font-sans text-foreground;
+  body {
+    @apply m-0 bg-background font-sans text-[14px] leading-[normal] text-ink antialiased;
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button {
+    cursor: pointer;
+  }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 6px;
+    border-radius: 3px;
+  }
+  ::selection {
+    background: #ded8f5;
+    color: #282335;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 }
