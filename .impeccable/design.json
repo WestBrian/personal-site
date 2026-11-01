@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-01T18:54:51.637Z",
+  "generatedAt": "2026-11-01T19:00:41Z",
   "title": "Design System: Brian West",
   "extensions": {
     "colorMeta": {
@@ -453,6 +453,13 @@
       "description": "A top hairline, a short Ink heading, one Muted Grey sentence, and an optional quiet link. No card.",
       "html": "<section class=\"ds-empty\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"3\" width=\"15\" height=\"18\" rx=\"2\"></rect><path d=\"M9 3v18M3 7h4M3 12h4M3 17h4m5-9h5m-5 4h4\"></path></svg><h2>No posts yet.</h2><p>The first post is still to come. Thanks for stopping by.</p><a class=\"ds-quiet-link\" href=\"/\">A little about me <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"></path></svg></a></section>",
       "css": ".ds-empty { border-top: 1px solid var(--line, #eaeaec); padding: 68px 0; font-family: Inter, Arial, sans-serif; background: transparent; box-shadow: none; } .ds-empty > svg { width: 28px; height: 28px; color: var(--soft, #73737d); margin: 0 0 24px; display: block; } .ds-empty h2 { margin: 0 0 12px; font-size: 23px; font-weight: 500; letter-spacing: -0.7px; color: var(--ink, #27272b); } .ds-empty p { margin: 0 0 28px; max-width: 360px; font-size: 15px; line-height: 1.85; color: var(--muted, #6e6e76); } .ds-quiet-link { display: inline-flex; align-items: center; gap: 9px; color: var(--muted, #6e6e76); font-size: 12px; text-decoration: none; } .ds-quiet-link:hover { color: var(--ink, #27272b); } .ds-quiet-link svg { width: 13px; height: 13px; } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Icons",
+      "kind": "custom",
+      "description": "Inline SVG, viewBox 0 0 24 24, fill none, stroke currentColor, width 1.5, round caps. Default box 17px. Not a filled icon set.",
+      "html": "<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle></svg>",
+      "css": ".ds-icon { width: 17px; height: 17px; display: inline-block; vertical-align: middle; color: currentColor; }"
     }
   ],
   "narrative": {
@@ -460,7 +467,7 @@
     "overview": "A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats, glows, or animates. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.",
     "keyCharacteristics": [
       "One typeface (Inter), set large and tight for headings and airy for reading.",
-      "Warm near-white ground with cool grey ink. Dark mode mirrors every role.",
+      "Warm near-white ground with cool grey ink. Dark mode is `:root[data-theme=\"dark\"]` and mirrors every role that has a dark pair.",
       "Content sits in a single centered column. There are no cards, grids of tiles, or sidebars.",
       "Hairline rules (1px `line`) separate sections and list rows.",
       "The accent is a state, not a fill."
@@ -502,7 +509,9 @@
       "Don't add shadows, cards, tinted panels, or gradients. The system is flat.",
       "Don't introduce a second typeface.",
       "Don't use `accent` as a fill or as resting text color.",
-      "Don't use `headline` grey below display sizes."
+      "Don't use `headline` grey below display sizes.",
+      "Don't bring back Geist, a slate palette, or `prefers-color-scheme`. Those are not this site.",
+      "Don't replace the incumbent 10\u201311px meta type as part of an Impeccable pass. A later rendered audit can argue about it."
     ]
   }
 }

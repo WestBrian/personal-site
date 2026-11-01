@@ -188,7 +188,7 @@ A single calm column of text on near-white paper. The page is mostly whitespace.
 **Key Characteristics:**
 
 - One typeface (Inter), set large and tight for headings and airy for reading.
-- Warm near-white ground with cool grey ink. Dark mode mirrors every role.
+- Warm near-white ground with cool grey ink. Dark mode is `:root[data-theme="dark"]` and mirrors every role that has a dark pair.
 - Content sits in a single centered column. There are no cards, grids of tiles, or sidebars.
 - Hairline rules (1px `line`) separate sections and list rows.
 - The accent is a state, not a fill.
@@ -211,6 +211,8 @@ Restrained neutrals with one violet accent held in reserve.
 - **Hairline** (`line` / `line-dark`): 1px rules between sections and rows, and the monogram and avatar borders.
 - **Button Wash** (`button` / `button-dark`): the hover fill behind the round theme toggle. It is the only filled hover state.
 - **Selection** (`selection` on `selection-ink`): the text-selection pair. It is not theme-aware today.
+- **Unused:** `--wash` / `--wash-dark` are defined in `globals.css` and mapped in Tailwind, but nothing in `src/` uses them. Do not assign them a job in this document.
+- **Literal colors without dark pairs:** `selection`, `selection-ink`, `link-underline`, and `quote-rule` are hex literals in CSS or JSX. They have no dark counterparts.
 
 ### Named Rules
 
@@ -298,6 +300,10 @@ Mostly square and open. Content blocks have no container shape at all. Rounding 
 
 - A top hairline, a short Ink heading ("No posts yet."), one Muted Grey sentence, and an optional quiet link. The Blog index adds a 28px stroked icon.
 
+### Icons
+
+- Inline SVG, `viewBox="0 0 24 24"`, `fill="none"`, stroke `currentColor`, width 1.5, round caps. Default box 17px. Not a filled icon set.
+
 ## Do's and Don'ts
 
 ### Do:
@@ -313,3 +319,5 @@ Mostly square and open. Content blocks have no container shape at all. Rounding 
 - **Don't** introduce a second typeface.
 - **Don't** use `accent` as a fill or as resting text color.
 - **Don't** use `headline` grey below display sizes.
+- **Don't** bring back Geist, a slate palette, or `prefers-color-scheme`. Those are not this site.
+- **Don't** replace the incumbent 10–11px meta type as part of an Impeccable pass. A later rendered audit can argue about it.

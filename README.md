@@ -21,4 +21,12 @@ The theme defaults to light and remembers the reader’s selection in `bw-theme`
 
 ## Design tooling
 
-Cursor agents get the [Impeccable](https://impeccable.style) design skill from `.cursor/skills/impeccable`, with product context in `PRODUCT.md` and the visual system in `DESIGN.md`. Type `/impeccable` in Cursor chat to list commands. A design-detector hook in `.cursor/hooks.json` reviews agent edits to UI files; turn it off for this project with `/impeccable hooks off`. On first use the launcher downloads a checksum-verified engine binary for your platform into `~/.impeccable`, so it needs network access once.
+Cursor agents get the [Impeccable](https://impeccable.style) design skill from `.cursor/skills/impeccable`, with product context in `PRODUCT.md` and the visual system in `DESIGN.md`. Type `/impeccable` in Cursor chat to list commands. A design-detector hook in `.cursor/hooks.json` reviews agent edits to UI files; turn it off for this project with `/impeccable hooks off`.
+
+The engine binary under `.cursor/skills/impeccable/scripts/bin/` is gitignored. Once per machine, from the repo root, warm the cache before the first hook edit so the download does not burn the 5s hook timeout:
+
+```sh
+.cursor/skills/impeccable/scripts/impeccable engine-probe
+```
+
+That downloads a checksum-verified engine into `~/.impeccable` when the project binary is absent. Reinstall with `npx impeccable install --providers=cursor --project -y`, then `.cursor/skills/impeccable/scripts/impeccable hooks on`.
