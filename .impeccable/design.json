@@ -1,0 +1,517 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T19:00:41Z",
+  "title": "Design System: Brian West",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#fdfdfc",
+        "tonalRamp": [
+          "oklch(15% 0.0003 106.42)",
+          "oklch(26.43% 0.0008 106.42)",
+          "oklch(37.86% 0.0011 106.42)",
+          "oklch(49.29% 0.0013 106.42)",
+          "oklch(60.71% 0.0013 106.42)",
+          "oklch(72.14% 0.0011 106.42)",
+          "oklch(83.57% 0.0008 106.42)",
+          "oklch(95% 0.0003 106.42)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#27272b",
+        "tonalRamp": [
+          "oklch(15% 0.0018 285.91)",
+          "oklch(26.43% 0.0042 285.91)",
+          "oklch(37.86% 0.0061 285.91)",
+          "oklch(49.29% 0.0072 285.91)",
+          "oklch(60.71% 0.0072 285.91)",
+          "oklch(72.14% 0.0061 285.91)",
+          "oklch(83.57% 0.0042 285.91)",
+          "oklch(95% 0.0018 285.91)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Grey",
+        "canonical": "#6e6e76",
+        "tonalRamp": [
+          "oklch(15% 0.0031 285.98)",
+          "oklch(26.43% 0.0071 285.98)",
+          "oklch(37.86% 0.0103 285.98)",
+          "oklch(49.29% 0.0121 285.98)",
+          "oklch(60.71% 0.0121 285.98)",
+          "oklch(72.14% 0.0103 285.98)",
+          "oklch(83.57% 0.0071 285.98)",
+          "oklch(95% 0.0031 285.98)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Grey",
+        "canonical": "#73737d",
+        "tonalRamp": [
+          "oklch(15% 0.0038 285.89)",
+          "oklch(26.43% 0.0088 285.89)",
+          "oklch(37.86% 0.0128 285.89)",
+          "oklch(49.29% 0.015 285.89)",
+          "oklch(60.71% 0.015 285.89)",
+          "oklch(72.14% 0.0128 285.89)",
+          "oklch(83.57% 0.0088 285.89)",
+          "oklch(95% 0.0038 285.89)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#eaeaec",
+        "tonalRamp": [
+          "oklch(15% 0.0007 286.35)",
+          "oklch(26.43% 0.0015 286.35)",
+          "oklch(37.86% 0.0022 286.35)",
+          "oklch(49.29% 0.0026 286.35)",
+          "oklch(60.71% 0.0026 286.35)",
+          "oklch(72.14% 0.0022 286.35)",
+          "oklch(83.57% 0.0015 286.35)",
+          "oklch(95% 0.0007 286.35)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Quiet Violet",
+        "canonical": "#6558bd",
+        "tonalRamp": [
+          "oklch(15% 0.0382 285.72)",
+          "oklch(26.43% 0.088 285.72)",
+          "oklch(37.86% 0.1279 285.72)",
+          "oklch(49.29% 0.15 285.72)",
+          "oklch(60.71% 0.15 285.72)",
+          "oklch(72.14% 0.1279 285.72)",
+          "oklch(83.57% 0.0853 285.72)",
+          "oklch(95% 0.0248 285.72)"
+        ]
+      },
+      "button": {
+        "role": "neutral",
+        "displayName": "Button Wash",
+        "canonical": "#f0f0ef",
+        "tonalRamp": [
+          "oklch(15% 0.0003 106.42)",
+          "oklch(26.43% 0.0008 106.42)",
+          "oklch(37.86% 0.0011 106.42)",
+          "oklch(49.29% 0.0013 106.42)",
+          "oklch(60.71% 0.0013 106.42)",
+          "oklch(72.14% 0.0011 106.42)",
+          "oklch(83.57% 0.0008 106.42)",
+          "oklch(95% 0.0003 106.42)"
+        ]
+      },
+      "headline": {
+        "role": "neutral",
+        "displayName": "Headline Grey",
+        "canonical": "#898992",
+        "tonalRamp": [
+          "oklch(15% 0.0033 286.01)",
+          "oklch(26.43% 0.0077 286.01)",
+          "oklch(37.86% 0.0111 286.01)",
+          "oklch(49.29% 0.0131 286.01)",
+          "oklch(60.71% 0.0131 286.01)",
+          "oklch(72.14% 0.0111 286.01)",
+          "oklch(83.57% 0.0077 286.01)",
+          "oklch(95% 0.0033 286.01)"
+        ]
+      },
+      "selection": {
+        "role": "neutral",
+        "displayName": "Selection",
+        "canonical": "#ded8f5",
+        "tonalRamp": [
+          "oklch(15% 0.01 295.07)",
+          "oklch(26.43% 0.0229 295.07)",
+          "oklch(37.86% 0.0333 295.07)",
+          "oklch(49.29% 0.0391 295.07)",
+          "oklch(60.71% 0.0391 295.07)",
+          "oklch(72.14% 0.0333 295.07)",
+          "oklch(83.57% 0.0229 295.07)",
+          "oklch(95% 0.01 295.07)"
+        ]
+      },
+      "selection-ink": {
+        "role": "neutral",
+        "displayName": "Selection Ink",
+        "canonical": "#282335",
+        "tonalRamp": [
+          "oklch(15% 0.0084 296.85)",
+          "oklch(26.43% 0.0193 296.85)",
+          "oklch(37.86% 0.0281 296.85)",
+          "oklch(49.29% 0.0329 296.85)",
+          "oklch(60.71% 0.0329 296.85)",
+          "oklch(72.14% 0.0281 296.85)",
+          "oklch(83.57% 0.0193 296.85)",
+          "oklch(95% 0.0084 296.85)"
+        ]
+      },
+      "link-underline": {
+        "role": "neutral",
+        "displayName": "Link Underline",
+        "canonical": "#cccbd4",
+        "tonalRamp": [
+          "oklch(15% 0.0031 291.25)",
+          "oklch(26.43% 0.0071 291.25)",
+          "oklch(37.86% 0.0104 291.25)",
+          "oklch(49.29% 0.0122 291.25)",
+          "oklch(60.71% 0.0122 291.25)",
+          "oklch(72.14% 0.0104 291.25)",
+          "oklch(83.57% 0.0071 291.25)",
+          "oklch(95% 0.0031 291.25)"
+        ]
+      },
+      "quote-rule": {
+        "role": "primary",
+        "displayName": "Quote Rule",
+        "canonical": "#c5b9ee",
+        "tonalRamp": [
+          "oklch(15% 0.0187 295.07)",
+          "oklch(26.43% 0.043 295.07)",
+          "oklch(37.86% 0.0626 295.07)",
+          "oklch(49.29% 0.0734 295.07)",
+          "oklch(60.71% 0.0734 295.07)",
+          "oklch(72.14% 0.0626 295.07)",
+          "oklch(83.57% 0.043 295.07)",
+          "oklch(95% 0.0187 295.07)"
+        ]
+      },
+      "background-dark": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#19191b",
+        "tonalRamp": [
+          "oklch(15% 0.001 286.07)",
+          "oklch(26.43% 0.0022 286.07)",
+          "oklch(37.86% 0.0032 286.07)",
+          "oklch(49.29% 0.0038 286.07)",
+          "oklch(60.71% 0.0038 286.07)",
+          "oklch(72.14% 0.0032 286.07)",
+          "oklch(83.57% 0.0022 286.07)",
+          "oklch(95% 0.001 286.07)"
+        ]
+      },
+      "ink-dark": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#e9e9ec",
+        "tonalRamp": [
+          "oklch(15% 0.001 286.32)",
+          "oklch(26.43% 0.0023 286.32)",
+          "oklch(37.86% 0.0034 286.32)",
+          "oklch(49.29% 0.0039 286.32)",
+          "oklch(60.71% 0.0039 286.32)",
+          "oklch(72.14% 0.0034 286.32)",
+          "oklch(83.57% 0.0023 286.32)",
+          "oklch(95% 0.001 286.32)"
+        ]
+      },
+      "muted-dark": {
+        "role": "neutral",
+        "displayName": "Muted Grey",
+        "canonical": "#a3a3ad",
+        "tonalRamp": [
+          "oklch(15% 0.0036 286.03)",
+          "oklch(26.43% 0.0083 286.03)",
+          "oklch(37.86% 0.012 286.03)",
+          "oklch(49.29% 0.0141 286.03)",
+          "oklch(60.71% 0.0141 286.03)",
+          "oklch(72.14% 0.012 286.03)",
+          "oklch(83.57% 0.0083 286.03)",
+          "oklch(95% 0.0036 286.03)"
+        ]
+      },
+      "soft-dark": {
+        "role": "neutral",
+        "displayName": "Soft Grey",
+        "canonical": "#85858e",
+        "tonalRamp": [
+          "oklch(15% 0.0034 286)",
+          "oklch(26.43% 0.0077 286)",
+          "oklch(37.86% 0.0112 286)",
+          "oklch(49.29% 0.0132 286)",
+          "oklch(60.71% 0.0132 286)",
+          "oklch(72.14% 0.0112 286)",
+          "oklch(83.57% 0.0077 286)",
+          "oklch(95% 0.0034 286)"
+        ]
+      },
+      "line-dark": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#313136",
+        "tonalRamp": [
+          "oklch(15% 0.0022 285.88)",
+          "oklch(26.43% 0.0051 285.88)",
+          "oklch(37.86% 0.0074 285.88)",
+          "oklch(49.29% 0.0087 285.88)",
+          "oklch(60.71% 0.0087 285.88)",
+          "oklch(72.14% 0.0074 285.88)",
+          "oklch(83.57% 0.0051 285.88)",
+          "oklch(95% 0.0022 285.88)"
+        ]
+      },
+      "accent-dark": {
+        "role": "primary",
+        "displayName": "Quiet Violet",
+        "canonical": "#b8aaf3",
+        "tonalRamp": [
+          "oklch(15% 0.0259 292.61)",
+          "oklch(26.43% 0.0596 292.61)",
+          "oklch(37.86% 0.0867 292.61)",
+          "oklch(49.29% 0.1017 292.61)",
+          "oklch(60.71% 0.1017 292.61)",
+          "oklch(72.14% 0.0867 292.61)",
+          "oklch(83.57% 0.0596 292.61)",
+          "oklch(95% 0.0259 292.61)"
+        ]
+      },
+      "button-dark": {
+        "role": "neutral",
+        "displayName": "Button Wash",
+        "canonical": "#29292e",
+        "tonalRamp": [
+          "oklch(15% 0.0023 285.81)",
+          "oklch(26.43% 0.0052 285.81)",
+          "oklch(37.86% 0.0076 285.81)",
+          "oklch(49.29% 0.0089 285.81)",
+          "oklch(60.71% 0.0089 285.81)",
+          "oklch(72.14% 0.0076 285.81)",
+          "oklch(83.57% 0.0052 285.81)",
+          "oklch(95% 0.0023 285.81)"
+        ]
+      },
+      "headline-dark": {
+        "role": "neutral",
+        "displayName": "Headline Grey",
+        "canonical": "#9d9da8",
+        "tonalRamp": [
+          "oklch(15% 0.004 285.98)",
+          "oklch(26.43% 0.0091 285.98)",
+          "oklch(37.86% 0.0133 285.98)",
+          "oklch(49.29% 0.0156 285.98)",
+          "oklch(60.71% 0.0156 285.98)",
+          "oklch(72.14% 0.0133 285.98)",
+          "oklch(83.57% 0.0091 285.98)",
+          "oklch(95% 0.004 285.98)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "About hero only, split into an Ink line and a Headline Grey line."
+      },
+      "display-tablet": {
+        "displayName": "Display tablet",
+        "purpose": "About hero at the tablet size."
+      },
+      "display-phone": {
+        "displayName": "Display phone",
+        "purpose": "About hero on phones. Also the Blog heading on phones and the 404 heading."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Blog index heading."
+      },
+      "headline-article": {
+        "displayName": "Article headline",
+        "purpose": "Article titles."
+      },
+      "headline-article-phone": {
+        "displayName": "Article headline phone",
+        "purpose": "Article titles on phones."
+      },
+      "title-lg": {
+        "displayName": "Title large",
+        "purpose": "Empty-state heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Article h2 sections."
+      },
+      "title-phone": {
+        "displayName": "Title phone",
+        "purpose": "Article h2 sections on phones."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Article blockquotes."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Intro paragraph under a page heading, in Muted Grey."
+      },
+      "lede-sm": {
+        "displayName": "Lede small",
+        "purpose": "Intro on smaller screens, and the full post-row title on phones."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Article paragraphs in a 660px column."
+      },
+      "body-sm": {
+        "displayName": "Body small",
+        "purpose": "About prose and compact post-row titles."
+      },
+      "body-base": {
+        "displayName": "Body base",
+        "purpose": "The 14px document default."
+      },
+      "ui": {
+        "displayName": "UI",
+        "purpose": "Header navigation and the About meta line."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Back links and section labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Dates and byline."
+      },
+      "micro": {
+        "displayName": "Micro",
+        "purpose": "Footer and byline on phones."
+      }
+    },
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "max-width: 550px"
+      },
+      {
+        "name": "tablet",
+        "value": "max-width: 800px"
+      },
+      {
+        "name": "wide",
+        "value": "min-width: 1500px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Text links in UI type and Muted Grey, with an Ink dot under the active item.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a class=\"ds-active\" href=\"/\" aria-current=\"page\">About</a><a href=\"/blog\">Blog</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 30px; font-family: Inter, Arial, sans-serif; font-size: 13px; font-weight: 400; color: var(--muted, #6e6e76); } .ds-nav a { position: relative; padding: 9px 0; color: inherit; text-decoration: none; } .ds-nav a.ds-active { color: var(--ink, #27272b); } .ds-nav a.ds-active::after { content: \"\"; position: absolute; bottom: 0; left: calc(50% - 2px); width: 4px; height: 4px; border-radius: 9999px; background: var(--ink, #27272b); } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Theme toggle",
+      "kind": "custom",
+      "refersTo": "theme-toggle",
+      "description": "30px circle, transparent at rest, Button Wash on hover.",
+      "html": "<button class=\"ds-theme-toggle\" type=\"button\" aria-label=\"Switch color theme\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3.5\"></circle><path d=\"M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5\"></path></svg></button>",
+      "css": ".ds-theme-toggle { width: 30px; height: 30px; border: 0; border-radius: 9999px; background: transparent; color: var(--ink, #27272b); display: grid; place-items: center; padding: 0; } .ds-theme-toggle:hover { background: var(--button, #f0f0ef); } .ds-theme-toggle svg { width: 17px; height: 17px; } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Post row compact",
+      "kind": "custom",
+      "refersTo": "post-row",
+      "description": "Full-width link row with a top hairline. The title turns Quiet Violet on hover.",
+      "html": "<a class=\"ds-post-row\" href=\"/blog/example\"><div><h3>Article title</h3><p>A short description of the piece.</p></div><div class=\"ds-post-meta\"><time datetime=\"2026-01-01\">Jan 1</time><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"></path></svg></div></a>",
+      "css": ".ds-post-row { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 25px; border-top: 1px solid var(--line, #eaeaec); padding: 26px 0; text-decoration: none; color: inherit; font-family: Inter, Arial, sans-serif; } .ds-post-row h3 { margin: 0 0 9px; font-size: 15px; font-weight: 500; letter-spacing: -0.25px; line-height: 1.5; color: var(--ink, #27272b); } .ds-post-row:hover h3 { color: var(--accent, #6558bd); } .ds-post-row p { margin: 0; font-size: 12px; line-height: 1.65; color: var(--muted, #6e6e76); } .ds-post-meta { display: flex; align-items: center; gap: 16px; font-size: 11px; color: var(--muted, #6e6e76); white-space: nowrap; } .ds-post-meta svg { width: 14px; height: 14px; color: var(--soft, #73737d); } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Post row full",
+      "kind": "custom",
+      "refersTo": "post-row",
+      "description": "Blog index row. 18px title, 14px description at max 480px, Quiet Violet on hover.",
+      "html": "<a class=\"ds-post-row ds-post-row-full\" href=\"/blog/example\"><div><h2>Article title</h2><p>A short description of the piece.</p></div><div class=\"ds-post-meta\"><time datetime=\"2026-01-01\">Jan 1</time><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"></path></svg></div></a>",
+      "css": ".ds-post-row { display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 25px; border-top: 1px solid var(--line, #eaeaec); padding: 32px 0; text-decoration: none; color: inherit; font-family: Inter, Arial, sans-serif; } .ds-post-row h2 { margin: 0 0 12px; font-size: 18px; font-weight: 500; letter-spacing: -0.25px; line-height: 1.5; color: var(--ink, #27272b); } .ds-post-row:hover h2 { color: var(--accent, #6558bd); } .ds-post-row p { margin: 0; max-width: 480px; font-size: 14px; line-height: 1.8; color: var(--muted, #6e6e76); } .ds-post-meta { display: flex; align-items: center; gap: 16px; padding-top: 5px; font-size: 11px; color: var(--muted, #6e6e76); white-space: nowrap; } .ds-post-meta svg { width: 14px; height: 14px; color: var(--soft, #73737d); } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Text link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Ink with a 4px-offset link-underline underline, hovering to Quiet Violet.",
+      "html": "<a class=\"ds-text-link\" href=\"/\">A text link</a>",
+      "css": ".ds-text-link { color: var(--ink, #27272b); font-family: Inter, Arial, sans-serif; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: #cccbd4; } .ds-text-link:hover { color: var(--accent, #6558bd); } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Quiet link",
+      "kind": "custom",
+      "refersTo": "quiet-link",
+      "description": "Muted Grey label with a trailing arrow, hovering to Ink.",
+      "html": "<a class=\"ds-quiet-link\" href=\"/blog\">All posts <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"></path></svg></a>",
+      "css": ".ds-quiet-link { display: inline-flex; align-items: center; gap: 9px; color: var(--muted, #6e6e76); font-family: Inter, Arial, sans-serif; font-size: 12px; font-weight: 400; text-decoration: none; } .ds-quiet-link:hover { color: var(--ink, #27272b); } .ds-quiet-link svg { width: 13px; height: 13px; } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Empty state",
+      "kind": "custom",
+      "description": "A top hairline, a short Ink heading, one Muted Grey sentence, and an optional quiet link. No card.",
+      "html": "<section class=\"ds-empty\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"5\" y=\"3\" width=\"15\" height=\"18\" rx=\"2\"></rect><path d=\"M9 3v18M3 7h4M3 12h4M3 17h4m5-9h5m-5 4h4\"></path></svg><h2>No posts yet.</h2><p>The first post is still to come. Thanks for stopping by.</p><a class=\"ds-quiet-link\" href=\"/\">A little about me <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14m-5-5 5 5-5 5\"></path></svg></a></section>",
+      "css": ".ds-empty { border-top: 1px solid var(--line, #eaeaec); padding: 68px 0; font-family: Inter, Arial, sans-serif; background: transparent; box-shadow: none; } .ds-empty > svg { width: 28px; height: 28px; color: var(--soft, #73737d); margin: 0 0 24px; display: block; } .ds-empty h2 { margin: 0 0 12px; font-size: 23px; font-weight: 500; letter-spacing: -0.7px; color: var(--ink, #27272b); } .ds-empty p { margin: 0 0 28px; max-width: 360px; font-size: 15px; line-height: 1.85; color: var(--muted, #6e6e76); } .ds-quiet-link { display: inline-flex; align-items: center; gap: 9px; color: var(--muted, #6e6e76); font-size: 12px; text-decoration: none; } .ds-quiet-link:hover { color: var(--ink, #27272b); } .ds-quiet-link svg { width: 13px; height: 13px; } .ds-nav a:focus-visible, .ds-theme-toggle:focus-visible, .ds-post-row:focus-visible, .ds-text-link:focus-visible, .ds-quiet-link:focus-visible { outline: 2px solid var(--accent, #6558bd); outline-offset: 6px; border-radius: 3px; }"
+    },
+    {
+      "name": "Icons",
+      "kind": "custom",
+      "description": "Inline SVG, viewBox 0 0 24 24, fill none, stroke currentColor, width 1.5, round caps. Default box 17px. Not a filled icon set.",
+      "html": "<svg class=\"ds-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"9\"></circle></svg>",
+      "css": ".ds-icon { width: 17px; height: 17px; display: inline-block; vertical-align: middle; color: currentColor; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Simple modern whitespace",
+    "overview": "A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats, glows, or animates. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.",
+    "keyCharacteristics": [
+      "One typeface (Inter), set large and tight for headings and airy for reading.",
+      "Warm near-white ground with cool grey ink. Dark mode is `:root[data-theme=\"dark\"]` and mirrors every role that has a dark pair.",
+      "Content sits in a single centered column. There are no cards, grids of tiles, or sidebars.",
+      "Hairline rules (1px `line`) separate sections and list rows.",
+      "The accent is a state, not a fill."
+    ],
+    "rules": [
+      {
+        "name": "The Violet-as-State Rule",
+        "body": "`accent` appears only in response to the reader (hover, focus, selection) or as a hairline (the blockquote rule). It is never a background fill or a resting text color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Display-Only Grey Rule",
+        "body": "`headline` grey sits at about 3.4:1 on light Paper, so it is reserved for display-size type. Never use it for text below 24px.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Inter only, at weights 400, 500, 550, and 600. Hierarchy comes from size, weight, and grey value, never from a second face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Single Column Rule",
+        "body": "Content lives in one centered column. There are no sidebars, multi-column feeds, or full-bleed bands.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Separate with a 1px `line` rule or with space. Never with a shadow, a card, or a tinted panel.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every new surface inside the 744px column (660px for long-form reading) with the incumbent gutters.",
+      "Do define any new color as a CSS variable in `globals.css` with both light and dark values, then map it in `tailwind.config.ts`.",
+      "Do separate content with 1px `line` hairlines and whitespace.",
+      "Do keep the skip link, `:focus-visible` outline (2px accent, 6px offset, `focus` radius), and `prefers-reduced-motion` handling intact."
+    ],
+    "donts": [
+      "Don't add shadows, cards, tinted panels, or gradients. The system is flat.",
+      "Don't introduce a second typeface.",
+      "Don't use `accent` as a fill or as resting text color.",
+      "Don't use `headline` grey below display sizes.",
+      "Don't bring back Geist, a slate palette, or `prefers-color-scheme`. Those are not this site.",
+      "Don't replace the incumbent 10\u201311px meta type as part of an Impeccable pass. A later rendered audit can argue about it."
+    ]
+  }
+}
