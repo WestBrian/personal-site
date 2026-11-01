@@ -31,7 +31,7 @@ export default function RootLayout({
         </a>
         <div className="mx-auto max-w-[1080px] px-12 tablet:px-[35px] phone:px-[26px]">
           <SiteHeader />
-          <main id="main" tabIndex={-1}>
+          <main id="main" tabIndex={-1} className="focus:outline-none">
             {children}
           </main>
           <SiteFooter />
