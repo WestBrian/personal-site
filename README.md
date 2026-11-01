@@ -18,3 +18,7 @@ Create a `.tsx` file in `src/content/posts`. Export a `post` object that satisfi
 The site starts with no published articles. About and Blog show empty states until a real article is added to the manifest. Unknown article URLs return a 404.
 
 The theme defaults to light and remembers the reader’s selection in `bw-theme` when browser storage is available.
+
+## Design tooling
+
+Cursor agents get the [Impeccable](https://impeccable.style) design skill from `.cursor/skills/impeccable`, with product context in `PRODUCT.md` and the visual system in `DESIGN.md`. Type `/impeccable` in Cursor chat to list commands. A design-detector hook in `.cursor/hooks.json` reviews agent edits to UI files; turn it off for this project with `/impeccable hooks off`. On first use the launcher downloads a checksum-verified engine binary for your platform into `~/.impeccable`, so it needs network access once.
