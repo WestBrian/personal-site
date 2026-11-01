@@ -44,8 +44,6 @@ next-env.d.ts
 # checksum-verifies it into ~/.impeccable on first run
 /.cursor/skills/impeccable/scripts/bin/
 
-# impeccable: track shared config, the DESIGN.md sidecar, and surface briefs;
-# everything else under .impeccable/ is local runtime state
 /.impeccable/*
 !/.impeccable/config.json
 !/.impeccable/design.json
