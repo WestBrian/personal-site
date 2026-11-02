@@ -31,7 +31,7 @@ export default async function ArticlePage({ params }: ArticleProps) {
     <article className="mx-auto max-w-[660px]">
       <Link
         href="/blog"
-        className="mt-[70px] inline-flex items-center gap-2 text-[12px] text-muted hover:text-ink phone:mt-[49px]"
+        className="motion-color mt-[70px] inline-flex items-center gap-2 text-[12px] text-muted hover:text-ink phone:mt-[49px]"
       >
         <Arrow back className="w-[13px]" />
         All writing
@@ -59,7 +59,7 @@ export default async function ArticlePage({ params }: ArticleProps) {
       <div className="mt-[50px] flex items-center justify-between border-t border-line pt-7">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink phone:text-[11px]"
+          className="motion-color inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink phone:text-[11px]"
         >
           <Arrow back className="h-[13px] w-[13px]" />
           Back to all writing

@@ -11,7 +11,7 @@ export default function NotFound() {
       </p>
       <Link
         href="/blog"
-        className="underline underline-offset-4 hover:text-accent"
+        className="motion-color underline underline-offset-4 hover:text-accent"
       >
         Back to all writing
       </Link>

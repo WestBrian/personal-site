@@ -10,10 +10,10 @@ export function SiteFooter() {
         </span>
       </span>
       <div className="flex gap-[23px] phone:flex-wrap phone:justify-end phone:gap-[16px]">
-        <Link href="/" className="hover:text-ink">
+        <Link href="/" className="motion-color hover:text-ink">
           About
         </Link>
-        <Link href="/blog" className="hover:text-ink">
+        <Link href="/blog" className="motion-color hover:text-ink">
           Blog
         </Link>
       </div>
