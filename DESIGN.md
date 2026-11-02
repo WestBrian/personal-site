@@ -183,7 +183,7 @@ components:
 
 **Creative North Star: "Simple modern whitespace"**
 
-A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats, glows, or animates. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.
+A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats or glows. Motion is restrained and purposeful: feedback, state changes, and rare delight, never decoration on every scroll. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.
 
 **Key Characteristics:**
 
@@ -311,7 +311,7 @@ Mostly square and open. Content blocks have no container shape at all. Rounding 
 - **Do** keep every new surface inside the 744px column (660px for long-form reading) with the incumbent gutters.
 - **Do** define any new color as a CSS variable in `globals.css` with both light and dark values, then map it in `tailwind.config.ts`.
 - **Do** separate content with 1px `line` hairlines and whitespace.
-- **Do** keep the skip link, `:focus-visible` outline (2px accent, 6px offset, `focus` radius), and `prefers-reduced-motion` handling intact.
+- **Do** keep the skip link and `:focus-visible` outline (2px accent, 6px offset, `focus` radius) intact. Gate movement behind `prefers-reduced-motion` (keep opacity or color feedback).
 
 ### Don't:
 
@@ -321,3 +321,4 @@ Mostly square and open. Content blocks have no container shape at all. Rounding 
 - **Don't** use `headline` grey below display sizes.
 - **Don't** bring back Geist, a slate palette, or `prefers-color-scheme`. Those are not this site.
 - **Don't** replace the incumbent 10–11px meta type as part of an Impeccable pass. A later rendered audit can argue about it.
+- **Don't** animate keyboard jumps, core nav route changes, or every section on scroll. Those read as delay.

@@ -464,7 +464,7 @@
   ],
   "narrative": {
     "northStar": "Simple modern whitespace",
-    "overview": "A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats, glows, or animates. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.",
+    "overview": "A single calm column of text on near-white paper. The page is mostly whitespace. Hierarchy comes from size, weight, and two greys rather than color or ornament, and the one violet accent appears only when something responds to the reader. Nothing floats or glows. Motion is restrained and purposeful: feedback, state changes, and rare delight, never decoration on every scroll. Depth is a hairline. The interface steps back so the writing and the person behind it carry the page.",
     "keyCharacteristics": [
       "One typeface (Inter), set large and tight for headings and airy for reading.",
       "Warm near-white ground with cool grey ink. Dark mode is `:root[data-theme=\"dark\"]` and mirrors every role that has a dark pair.",
@@ -503,7 +503,7 @@
       "Do keep every new surface inside the 744px column (660px for long-form reading) with the incumbent gutters.",
       "Do define any new color as a CSS variable in `globals.css` with both light and dark values, then map it in `tailwind.config.ts`.",
       "Do separate content with 1px `line` hairlines and whitespace.",
-      "Do keep the skip link, `:focus-visible` outline (2px accent, 6px offset, `focus` radius), and `prefers-reduced-motion` handling intact."
+      "Do keep the skip link and `:focus-visible` outline (2px accent, 6px offset, `focus` radius) intact. Gate movement behind `prefers-reduced-motion` (keep opacity or color feedback)."
     ],
     "donts": [
       "Don't add shadows, cards, tinted panels, or gradients. The system is flat.",
