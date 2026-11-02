@@ -511,7 +511,8 @@
       "Don't use `accent` as a fill or as resting text color.",
       "Don't use `headline` grey below display sizes.",
       "Don't bring back Geist, a slate palette, or `prefers-color-scheme`. Those are not this site.",
-      "Don't replace the incumbent 10\u201311px meta type as part of an Impeccable pass. A later rendered audit can argue about it."
+      "Don't replace the incumbent 10\u201311px meta type as part of an Impeccable pass. A later rendered audit can argue about it.",
+      "Don't animate keyboard jumps, core nav route changes, or every section on scroll. Those read as delay."
     ]
   }
 }
