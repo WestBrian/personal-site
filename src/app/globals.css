@@ -29,9 +29,6 @@
 }
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
   body {
     @apply m-0 bg-background font-sans text-[14px] leading-[normal] text-ink antialiased;
   }
@@ -51,10 +48,5 @@
   ::selection {
     background: #ded8f5;
     color: #282335;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
   }
 }
