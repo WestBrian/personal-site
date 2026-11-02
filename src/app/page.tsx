@@ -63,7 +63,7 @@ export default function AboutPage() {
                 You can find them on the{" "}
                 <Link
                   href="/blog"
-                  className="text-ink underline decoration-[#cccbd4] underline-offset-4 hover:text-accent"
+                  className="motion-color text-ink underline decoration-[#cccbd4] underline-offset-4 hover:text-accent"
                 >
                   blog
                 </Link>
@@ -92,18 +92,20 @@ export default function AboutPage() {
           {hasPosts ? (
             <Link
               href="/blog"
-              className="inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink phone:text-[11px]"
+              className="motion-color inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink phone:text-[11px]"
             >
               All posts <Arrow className="h-[13px] w-[13px]" />
             </Link>
           ) : null}
         </div>
         {hasPosts ? (
-          posts.slice(0, 2).map((post) => (
-            <PostRow key={post.slug} post={post} />
-          ))
+          <div className="motion-stagger">
+            {posts.slice(0, 2).map((post) => (
+              <PostRow key={post.slug} post={post} />
+            ))}
+          </div>
         ) : (
-          <div className="border-t border-line py-9 phone:py-8">
+          <div className="motion-empty-enter border-t border-line py-9 phone:py-8">
             <h3 className="mb-2 text-[14px] font-medium tracking-[-.25px] text-muted phone:text-[13px]">
               No posts yet.
             </h3>

@@ -31,12 +31,14 @@ export default function BlogPage() {
             <span>All writing</span>
             <span>{posts[0]?.date.slice(0, 4)}</span>
           </div>
-          {posts.map((post) => (
-            <PostRow key={post.slug} post={post} variant="full" />
-          ))}
+          <div className="motion-stagger">
+            {posts.map((post) => (
+              <PostRow key={post.slug} post={post} variant="full" />
+            ))}
+          </div>
         </>
       ) : (
-        <section className="border-t border-line py-[68px] phone:py-12">
+        <section className="motion-empty-enter border-t border-line py-[68px] phone:py-12">
           <Icon className="mb-6 h-7 w-7 text-soft">
             <rect x="5" y="3" width="15" height="18" rx="2" />
             <path d="M9 3v18M3 7h4M3 12h4M3 17h4m5-9h5m-5 4h4" />
@@ -49,7 +51,7 @@ export default function BlogPage() {
           </p>
           <Link
             href="/"
-            className="mt-7 inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink"
+            className="motion-color mt-7 inline-flex items-center gap-[9px] text-[12px] text-muted hover:text-ink"
           >
             A little about me <Arrow className="h-[13px] w-[13px]" />
           </Link>

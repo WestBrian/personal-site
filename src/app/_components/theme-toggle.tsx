@@ -31,7 +31,7 @@ export function ThemeToggle() {
           : `Switch to ${theme === "dark" ? "light" : "dark"} theme`
       }
       title="Switch theme"
-      className="ml-[3px] grid h-[30px] w-[30px] place-items-center rounded-full border-0 bg-transparent hover:bg-button phone:-ml-[7px] phone:w-[25px]"
+      className="motion-press motion-theme-toggle ml-[3px] grid h-[30px] w-[30px] place-items-center rounded-full border-0 bg-transparent phone:-ml-[7px] phone:w-[25px]"
     >
       <Icon>
         <circle cx="12" cy="12" r="3.5" />

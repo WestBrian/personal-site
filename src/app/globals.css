@@ -2,8 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --bg {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #fdfdfc;
+}
+@property --ink {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #27272b;
+}
+@property --muted {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #6e6e76;
+}
+@property --soft {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #73737d;
+}
+@property --line {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #eaeaec;
+}
+@property --accent {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #6558bd;
+}
+@property --wash {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f4f3f8;
+}
+@property --button {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #f0f0ef;
+}
+@property --headline {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #898992;
+}
+
 :root {
   color-scheme: light;
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --bg: #fdfdfc;
   --ink: #27272b;
   --muted: #6e6e76;
@@ -30,8 +77,18 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    transition:
+      --bg 200ms var(--ease-out),
+      --ink 200ms var(--ease-out),
+      --muted 200ms var(--ease-out),
+      --soft 200ms var(--ease-out),
+      --line 200ms var(--ease-out),
+      --accent 200ms var(--ease-out),
+      --wash 200ms var(--ease-out),
+      --button 200ms var(--ease-out),
+      --headline 200ms var(--ease-out);
   }
+
   body {
     @apply m-0 bg-background font-sans text-[14px] leading-[normal] text-ink antialiased;
   }
@@ -52,9 +109,94 @@
     background: #ded8f5;
     color: #282335;
   }
-  @media (prefers-reduced-motion: reduce) {
-    html {
-      scroll-behavior: auto;
-    }
+}
+
+@layer utilities {
+  .motion-press {
+    transition: transform 160ms var(--ease-out);
+  }
+  .motion-press:active {
+    transform: scale(0.97);
+  }
+
+  .motion-color {
+    transition: color 150ms ease;
+  }
+
+  .motion-empty-enter {
+    animation: motion-empty-enter 220ms var(--ease-out) both;
+  }
+
+  .motion-stagger > * {
+    animation: motion-fade-in 180ms var(--ease-out) both;
+    pointer-events: auto;
+  }
+  .motion-stagger > *:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  .motion-stagger > *:nth-child(2) {
+    animation-delay: 40ms;
+  }
+  .motion-stagger > *:nth-child(3) {
+    animation-delay: 80ms;
+  }
+  .motion-stagger > *:nth-child(4) {
+    animation-delay: 120ms;
+  }
+  .motion-stagger > *:nth-child(5) {
+    animation-delay: 160ms;
+  }
+  .motion-stagger > *:nth-child(6) {
+    animation-delay: 200ms;
+  }
+  .motion-stagger > *:nth-child(n + 7) {
+    animation-delay: 240ms;
+  }
+}
+
+@keyframes motion-empty-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes motion-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .motion-theme-toggle:hover {
+    background-color: var(--button);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    transition-duration: 100ms;
+  }
+
+  .motion-press,
+  .motion-press:active {
+    transition: none;
+    transform: none;
+  }
+
+  .motion-empty-enter {
+    animation: motion-fade-in 150ms ease both;
+  }
+
+  .motion-stagger > * {
+    animation: motion-fade-in 150ms ease both;
+    animation-delay: 0ms;
   }
 }

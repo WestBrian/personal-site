@@ -23,7 +23,7 @@ export function PostRow({
     >
       <div>
         <Heading
-          className={`font-medium tracking-[-.25px] group-hover:text-accent ${full ? "mb-3 text-[18px] leading-[1.5] phone:text-[17px] phone:leading-[1.6]" : "mb-[9px] text-[15px] leading-[1.5] phone:text-[14px] phone:leading-[1.6]"}`}
+          className={`motion-color font-medium tracking-[-.25px] group-hover:text-accent ${full ? "mb-3 text-[18px] leading-[1.5] phone:text-[17px] phone:leading-[1.6]" : "mb-[9px] text-[15px] leading-[1.5] phone:text-[14px] phone:leading-[1.6]"}`}
         >
           {post.title}
         </Heading>
